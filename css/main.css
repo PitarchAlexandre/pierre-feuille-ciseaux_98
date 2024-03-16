@@ -1,0 +1,338 @@
+@import url('https://fonts.cdnfonts.com/css/levi-adobe-dia');
+@import url('https://fonts.cdnfonts.com/css/leviwindows');
+
+  *{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    margin:0;
+    font-family: Trebuchet MS, sans-serif;
+    background-color:#008080;
+}
+header {
+    width: 100%;
+    border: solid black 1px;
+    background-color: lightgray;
+    max-height: 120px;
+}
+.p-topbar {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+.windows-topbar{
+    margin: 3px 4px 0;
+    padding: 5px;
+    font-size: .8rem;
+    line-height: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #04008a;
+
+}
+
+.windows-topbar_close {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    font-family: 'LeviWindows', sans-serif;
+    border-radius: 0;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+}
+
+h1 {
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    font-family: 'LeviWindows', sans-serif ;
+    font-style: italic;
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 1s infinite;
+}
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+h2 {
+    margin: 5px;
+}
+
+.jeu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textIntro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5%;
+    margin: 5px;
+
+}
+br {
+    margin: 5px;
+}
+
+ul button {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #e5e3e3;
+}
+
+ul button:hover {
+    background-color: darkgray;
+}
+
+button img {
+    max-width:100px
+}
+
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin:10px;
+}
+
+.bouton-windowsXPsound {
+    position: fixed;
+    margin-right: auto;
+    width: 40%;
+    left: 2px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bouton-windowsXPsound p {
+    font-family: 'LeviWindows', sans-serif ;
+    font-weight: bolder;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 1s infinite;
+    margin: 0;
+}
+
+.jokeOfTheYear {
+    max-width: 200px;
+
+}
+
+.asideChantier {
+    position: fixed;
+    margin-left: auto;
+    right: 2px;
+    float: right;
+    font-style: italic;
+    font-size: large;
+}
+.asideChantier img {
+    width: 200px;
+}
+
+.titreMondial {
+    font-family: 'LeviWindows', sans-serif ;
+    font-weight: bolder;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 1s infinite;
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin:auto 20px;
+    line-height: 50px;
+
+}
+
+.bot {
+    width: 390px;
+    height:300px;
+    margin-top: 5px;
+    background-color: #e5e3e3;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wndTopBarBot {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    color: #fff;
+    background-color: #04008a;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+}
+
+.titreBot {
+    font-family: 'LeviWindows', sans-serif;
+    font-size: x-large;
+    color: #fff;
+    margin-right: auto;
+}
+
+.wndTopBarBot img {
+    margin-left: auto;
+    max-width: 40%;
+}
+
+
+.imageBot img {
+    padding: 15px;
+    width: 260px;
+    height: 260px;
+}
+
+.affichageSigneOrdi {
+    padding-bottom: 2px;
+}
+
+.resultat {
+    margin: 0;
+    padding: 0;
+}
+
+.score {
+    margin: 0;
+    padding: 0;
+    font-size: xxx-large;
+}
+
+footer {
+    max-height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #c3c3c3;
+}
+
+.menuStart {
+    display: none;
+    width: 300px;
+    background-color: #c3c3c3;
+}
+
+.styleSideStart {
+    width: 10% ;
+    background-color: #04008a;
+    color: white;
+    transform: rotate(-90deg);
+}
+
+.restartGame {
+    font-family: 'LeviWindows', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #c3c3c3;
+    border-radius: 0;
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .windows-topbar {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        line-height: 15px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        background-color: #04008a;
+    }
+    h1 {
+       font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    ul{
+        margin: auto
+    }
+    li {
+        margin: auto;
+    }
+    ul button {
+        max-width: 100px;
+        max-height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    ul img {
+        max-height: 80px;
+        max-width: 80px;
+    }
+
+
+    aside {
+        display: none;
+    }
+    .bouton-windowsXPsound {
+        display: none;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .bouton-windowsXPsound {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+}
+@media screen and (max-width:1500px)
+{
+    .titreMondial {
+        display: none;
+    }
+}

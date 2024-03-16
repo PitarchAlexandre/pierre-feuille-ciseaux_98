@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--LIEN CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Police style windows 98-->
+    <link href="https://fonts.cdnfonts.com/css/levi-adobe-dia" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/leviwindows" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="windows-topbar"> <p class="p-topbar" id="citation">Un jeu exceptionnel qui te permettra de devenir
+    champion du monde de pierre, feuille, ciseaux !</p>
+        <button class="windows-topbar_close" id="boutonFermer">
+            ×
+        </button>
+    </div>
+<h1>Pierre, Feuille, Ciseaux 98</h1>
+</header>
+
+<main>
+
+    <h2>Bienvenue sur le jeu Pierre, Feuille, Ciseaux 98 !</h2>
+    <p class="textIntro">Choisissez votre coup pour commencer à jouer, l'IA jouera
+       automatiquement une fois que vous aurez commencez.
+        <br>Le premier arrivé à 10 remporte la partie !</p>
+
+    <div class="jeu">
+        <div class="joueur1">
+            <ul>
+                <li><button id="pierre"><img src="img/pierre.png" alt="pierre"/></button></li>
+                <li><button id="feuille"><img src="img/feuille.png" alt="feuille"/></button></li>
+                <li><button id="ciseaux"><img src="img/ciseaux.png" /></button></li>
+            </ul>
+        </div>
+
+        <aside class="bouton-windowsXPsound">
+            <p>Cliquez ici!!!</p>
+            <img src="img/fleche.gif" />
+            <iframe width="110" height="100" src="https://www.myinstants.com/instant/windows-xp-startup-sound-58970/embed/" frameborder="0" scrolling="no"></iframe>
+        </aside>
+
+        <h3>Signe IA :</h3>
+        <div class="bot">
+            <div class="wndTopBarBot">
+                <p>
+                    <p class="titreBot">Botinator-PFC-4.124.38</p>
+                    <img src="img/fichiers_cachesp1.png" />
+                </p>
+            </div>
+            <div class="imageBot">
+                <!-- Ancienne image du bot
+                <img src="img/pierre-feuille-ciseaux.png" id="signeImg" />-->
+
+                <img src="img/windows-98.webp" id="signeImg"/>
+            </div>
+                <p class="affichageSigneOrdi"id="signeOrdi"> </p>
+        </div>
+
+        <div class="resultat">
+            <p id="vainqueur"></p>
+        </div>
+
+        <div class="tableauScore">
+            <h3 class="score">
+                <strong id="scoreJoueur1">0</strong>
+                :
+                <strong id="scoreBot">0</strong>
+            </h3>
+
+        </div>
+    </div>
+    <div class="menuStart" id="listeStart">
+        <div class="styleSideStart">Windows 98</div>
+        <button class="restartGame" id="restartGameBtn">Restart game</button>
+    </div>
+
+    <aside class="asideChantier">
+        <img src="img/triangle.gif" alt="chantier-en-cours"/>
+        <p>Site en chantier !</p>
+        <img src="img/dauphin.gif" />
+        <p class="titreMondial">The least responsive website in the world!</p>
+    </aside>
+
+</main>
+
+<footer>
+<button class="btnDemarrer" id="btnWindows">
+
+    <img src="img/start.gif" alt="menu-start-windows_98"/>
+</button>
+</footer>
+
+<!--LES SCRIPTS JAVASCRIPT-->
+<script src="js/generateur-text.js"></script>
+<script src="js/jeu_pierre-feu-cis.js"></script>
+<script src="js/bouton-demarrer.js"></script>
+
+</body>
+</html>
