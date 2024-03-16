@@ -129,6 +129,7 @@ li {
     margin:10px 10px 5px 10px ;
 }
 
+/*BOUTON GENERANT LA SON DE WINDOWS XP*/
 .bouton-windowsXPsound {
     position: fixed;
     margin-right: auto;
@@ -151,9 +152,12 @@ li {
     margin: 0;
 }
 
+/*ASIDE CHANTIER EN COURS*/
 .asideChantier {
     position: fixed;
     margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
     right: 2px;
     float: right;
     font-style: italic;
@@ -220,7 +224,6 @@ h3 {
     margin-left: auto;
     max-width: 40%;
 }
-
 
 .imageBot img {
     padding: 15px;
@@ -311,12 +314,12 @@ footer {
         max-width: 80px;
     }
 
-
     aside {
-        display: none;
+        display: flex;
     }
     .bouton-windowsXPsound {
-        display: none;
+        display: flex;
+        margin-top: auto;
     }
     footer {
         position: relative;
@@ -326,15 +329,10 @@ footer {
 
 @media screen and (max-width:1200px) {
     .bouton-windowsXPsound {
-        display: none;
+
+    display: none;
     }
     aside {
-        display: none;
-    }
-}
-@media screen and (max-width:1500px)
-{
-    .titreMondial {
         display: none;
     }
 }
