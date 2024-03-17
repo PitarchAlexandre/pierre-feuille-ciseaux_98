@@ -269,21 +269,22 @@ footer {
 .btnDemarrer img {
     min-width: 100%;
     width: 100px;
-
-
+    z-index: 2;
 }
 
 .menuStart {
     display: flex;
     flex-direction: column;
     position: fixed;
-    bottom: 40px;
+    bottom: 50px;
     min-width: 17em;
     max-width: 300px;
     min-height: 300px;
     background-color: #c3c3c3;
     align-items: center;
     justify-content: center;
+    box-shadow: 3px 2px black, -2px -2px gray;
+    z-index: 1;
 }
 
 .sideStartWrapper{
@@ -292,7 +293,8 @@ footer {
     align-items: center; /* Centrer verticalement le contenu */
 }
 .styleSideStart {
-    width: 10%;
+    margin:3px;
+    width: 13%;
     height: 50%;
     background-color: #04008a;
     color: white;
@@ -305,16 +307,18 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: transparent;
 }
 
 .menuStart li {
     font-family: 'LeviWindows', sans-serif;
     font-weight: bold;
     font-size: x-large;
-    background-color: #c3c3c3;
+    background-color: transparent;
     border: none;
     border-radius: 0;
     margin-bottom: 5px; /* Espacement entre les boutons */
+
 }
 
 .menuStart li button {
@@ -322,6 +326,7 @@ footer {
     width: 100%; /* Pour occuper toute la largeur disponible */
     padding: 10px; /* Ajuster le padding selon vos préférences */
     box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+    background-color: transparent;
 }
 
 .menuStart li img {
