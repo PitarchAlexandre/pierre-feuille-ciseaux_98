@@ -31,6 +31,7 @@ const tabOrdi = [
     { choix: 'ciseaux', image: 'img/ciseaux.png'}
 ];
 
+//Evenement qui va se appeler la fonction jouer lorsque l'utilisateur va cliquer sur l'un des trois boutons
 pierre.addEventListener('click', function () {
     jouer('pierre');
 });
@@ -45,10 +46,12 @@ ciseaux.addEventListener('click', function () {
 
 function jouer(signeUtilisateur){
 
+
     let jeuOrdiIndex;
     //génération automatique et aléatoire du signe de l'ordinateur
     jeuOrdiIndex = Math.floor(Math.random() * tabOrdi.length);
     jeuOrdi = tabOrdi[jeuOrdiIndex];
+    //permettait d'afficher le signe textuellement
     //signeOrdi.innerText = jeuOrdi.choix;
     signeImg.src = jeuOrdi.image;
 
@@ -96,5 +99,3 @@ function jouer(signeUtilisateur){
         scoreOrdi.innerText = compteurScoreBot
     }
 }
-
-
