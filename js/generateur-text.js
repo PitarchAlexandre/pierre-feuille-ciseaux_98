@@ -14,6 +14,7 @@ let btnFermer = document.getElementById('boutonFermer');
 //permet de compter les cliques sur le bouton fermer
 let compteurClique = 0;
 
+//tableau qui contient les citations
 const tabCitation = ['Ok peut-être pas champion du monde, mais tu deviendras le meilleur!',
                     'Comment ça, tu penses que c\'est juste de la chance?',
                     'Arrête d\'essayer de quitter cette page!',
@@ -40,7 +41,7 @@ btnFermer.addEventListener('click', function () {
     //compte le nombre de fois que le bouton fermer à été cliqué
     compteurClique++;
     console.log(compteurClique);
-
+    //les 3 premières citations sont toujours les mêmes. Après elle sont générées aléatoirement
     switch (compteurClique) {
         case 1 :
             citationTopBar.innerText = tabCitation[0];
@@ -52,14 +53,24 @@ btnFermer.addEventListener('click', function () {
             citationTopBar.innerText = tabCitation[2];
             break;
         default:
-            let citationIndexTab;
-            let citationAleatoire;
-
-            citationIndexTab = Math.floor(Math.random() * tabCitation.length);
-            citationAleatoire = tabCitation[citationIndexTab];
-            citationTopBar.innerText = citationAleatoire;
+            //appel la fonction qui affiche des citations aléatoirement
+            citationAleatoire();
             break;
     }
 });
 
+//permet de générer des citations aléatoirement
+function citationAleatoire() {
+    //déclaration de l'index
+    let citationIndexTab;
+    //déclaration de la citation
+    let citationAleatoire;
 
+    //permet de générer un index au tableau aléatoirement
+    citationIndexTab = Math.floor(Math.random() * tabCitation.length);
+    //va chercher une citation dans le tableau
+    citationAleatoire = tabCitation[citationIndexTab];
+    //affiche le message dans le tableau à la place du texte d'origine
+    citationTopBar.innerText = citationAleatoire;
+
+}
