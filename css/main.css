@@ -118,10 +118,11 @@ br {
 }
 
 ul button {
-    height: 150px;
-    width: 150px;
+    height: 2rem;
+    width: 2rem;
     border-radius: 10px;
     background-color: #e5e3e3;
+
 }
 
 ul button:hover {
