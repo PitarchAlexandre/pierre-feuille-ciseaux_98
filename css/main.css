@@ -257,7 +257,7 @@ h3 {
 
 }
 
-
+/*MENU START WINDOWS*/
 
 footer {
     max-height: 40px;
@@ -268,19 +268,29 @@ footer {
 }
 
 .menuStart {
-    display: none;
-    width: 300px;
+
+    display: flex; /* Utiliser Flexbox */
+    flex-direction: column; /* Aligner les éléments en colonne */
+    justify-content: space-between;
+    position: fixed;
+    bottom: 40px;
+    min-width: 22em;
+    max-width: 500px;
+    min-height: 300px;
     background-color: #c3c3c3;
 }
 
 .styleSideStart {
+    min-height: 1rem;
     width: 10% ;
     background-color: #04008a;
     color: white;
     transform: rotate(-90deg);
+    flex: 1;
 }
 
 .restartGame {
+    text-align: justify;
     font-family: 'LeviWindows', sans-serif;
     font-weight: bold;
     font-size: x-large;
