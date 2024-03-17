@@ -99,7 +99,3 @@ function jouer(signeUtilisateur){
         scoreOrdi.innerText = compteurScoreBot
     }
 }
-
-function signeOrdinateur() {
-
-}
