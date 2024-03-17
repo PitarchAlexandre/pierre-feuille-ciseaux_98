@@ -118,8 +118,8 @@ br {
 }
 
 ul button {
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
     border-radius: 10px;
     background-color: #e5e3e3;
 }
@@ -129,7 +129,7 @@ ul button:hover {
 }
 
 button img {
-    max-width: 7.5em;
+    max-width: 7em;
 }
 
 ul {
@@ -228,7 +228,7 @@ h3 {
 /*ASIDE CHANTIER EN COURS*/
 .asideChantier {
     position: fixed;
-    margin-left: auto;
+    margin-left: 5px;
     margin-right: auto;
     margin-bottom: 20rem;
     right: 1.5em;
@@ -350,7 +350,8 @@ footer {
 }
 
 @media screen and (max-height: 1200px) and (min-width: 1000px) {
- .asideChantier img, .titreMondial{
-
+ .asideChantier, .asideChantier img, .titreMondial{
+    display: none;
  }
+
 }
