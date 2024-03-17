@@ -303,26 +303,19 @@ footer {
     white-space: nowrap;
 }
 .menuStart ul {
+    margin-top: auto;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.menuStart li {
-    font-family: 'LeviWindows', sans-serif;
-    font-weight: bold;
-    font-size: x-large;
-    background-color: #c3c3c3;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 5px; /* Espacement entre les boutons */
-}
 
 .menuStart li button {
     display: block; /* Afficher chaque bouton sur une ligne différente */
-    width: 100%; /* Pour occuper toute la largeur disponible */
-    padding: 10px; /* Ajuster le padding selon vos préférences */
-    box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+    width: 120%; /* Pour occuper toute la largeur disponible */
+    background: transparent;
+    margin-bottom: 5px; /* Espacement entre les boutons */
+    border-radius: 0;
+
 }
 
 .menuStart li img {
