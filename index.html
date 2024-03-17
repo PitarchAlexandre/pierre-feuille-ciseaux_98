@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
     <link rel="manifest" href="ico/site.webmanifest">
+
 </head>
 <body>
 
@@ -86,12 +87,19 @@
         <p class="titreMondial">The least responsive website in the world!</p>
     </aside>
 
+    <div class="popUp" id="popUpAide">
+        <div class="ineterieurPopUp">
+            <h2>Menu Aide utilisateur</h2>
+            <p>le texte qui donne des conseils en pierre feuille ciseaux</p>
+            <button class="popExit" id="fermerAide">Fermer</button>
+        </div>
+    </div>
+
     <div class="menuStart" id="listeStart">
         <div class="sideStartWrapper">
             <div class="styleSideStart">
                 <img src="img/wnd98.png"/>
             </div>
-
             <ul>
                 <li><button>
                     <img src="img/btnWindowsUpdate.png" height="55" width="360"/>
@@ -105,7 +113,7 @@
                 <li><button>
                     <img src="img/btnRechercher.png"/>
                 </button></li>
-                <li><button>
+                <li><button id="btnAide">
                     <img src="img/bntAide.png"/>
                 </button></li>
                 <li><button>
@@ -156,6 +164,7 @@
 <script src="js/generateur-text.js"></script>
 <script src="js/jeu_pierre-feu-cis.js"></script>
 <script src="js/bouton-demarrer.js"></script>
+<script src="js/aide.js"></script>
 
 </body>
 

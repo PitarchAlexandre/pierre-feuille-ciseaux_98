@@ -285,7 +285,7 @@ footer ul {
     margin-top: auto;
     min-width: 100%;
     width: 100px;
-    z-index: 2;
+    z-index: 5;
 }
 
 #internetExplorer{
@@ -310,7 +310,7 @@ footer ul {
     align-items: center;
     justify-content: center;
     box-shadow: 3px 2px black, -2px -2px gray;
-    z-index: 1;
+    z-index: 4;
 }
 
 .sideStartWrapper{
@@ -370,10 +370,32 @@ footer ul {
     filter: brightness(88%);
 }
 
+/*POPUP AIDE*/
+.popUp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #04008a;
+    /*CONTENU ECRIT*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popUpAide.open {
+    opacity: 1;
+    z-index: 999;
+}
+
 /*MEDIA QUERRY*/
-
-
-
 @media screen and (max-width: 900px) {
 
     .windows-topbar {
@@ -423,7 +445,7 @@ footer ul {
     .bot {
         display: inline-block;
         position: relative;
-        z-index: 2;
+        z-index: 5;
     }
 
     .bouton-windowsXPsound {
@@ -434,7 +456,7 @@ footer ul {
         margin-top: 10px; /* Ajoutez un peu d'espace au-dessus du bouton si nécessaire */
         position: relative;
 
-        z-index: 1;
+        z-index: 4;
     }
     footer {
         position: relative;
