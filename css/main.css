@@ -90,17 +90,9 @@ main {
 
 }
 
+/*TEXTE EN HAUT DE PAGE*/
 h2 {
     margin: 5px;
-}
-
-.jeu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .textIntro {
@@ -109,10 +101,20 @@ h2 {
     text-align: center;
     padding: 0.5%;
     margin: 5px;
-
 }
+
 br {
     margin: 5px;
+}
+
+/*LE JEU PIERRE FEUILLE CISEAUX*/
+.jeu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 ul button {
@@ -346,4 +348,8 @@ footer {
     aside {
         display: none;
     }
+}
+
+@media screen and (max-height: 1200px) and (min-width: 1000px) {
+    
 }
