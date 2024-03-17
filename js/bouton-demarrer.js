@@ -20,3 +20,4 @@ btnWindows.addEventListener('click', function () {
         menuStart.style.display ='none';
     }
 })
+
