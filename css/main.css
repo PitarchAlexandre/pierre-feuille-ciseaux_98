@@ -12,12 +12,16 @@ body {
     font-family: Trebuchet MS, sans-serif;
     background-color:#008080;
 }
+
+/* HEADER */
 header {
     width: 100%;
     border: solid black 1px;
     background-color: lightgray;
     max-height: 120px;
 }
+
+/*BARRE BLEU WINDOWS 98 DU HEADER*/
 .p-topbar {
     margin: 0;
     padding: 0;
@@ -34,6 +38,7 @@ header {
     justify-content: center;
     color: #fff;
     background-color: #04008a;
+    max-width: 100%;
 }
 
 .windows-topbar_close {
@@ -50,6 +55,7 @@ header {
     align-items: center;
 }
 
+/*TITRE DE LA PAGE DU HEADER*/
 @keyframes wheelHueColor {
     from, to { color: hsl(324, 70%, 45%); }
     10%      { color: hsl(360, 65%, 45%); }
@@ -72,7 +78,10 @@ h1 {
     font-style: italic;
     color: hsl(324, 70%, 45%);
     animation: wheelHueColor 1s infinite;
+    max-width: 100%;
 }
+
+/* MAIN */
 main {
     display: flex;
     justify-content: center;
@@ -90,6 +99,8 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .textIntro {
