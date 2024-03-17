@@ -288,9 +288,10 @@ footer ul {
     z-index: 2;
 }
 
-.internetExplo{
+#internetExplorer{
     margin-top: 5px;
 }
+
 .boutonBarreTaches {
     display: inline-block;
     clip:rect(0px,60px,200px,0px);overflow:hidden
