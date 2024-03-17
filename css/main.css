@@ -231,6 +231,7 @@ h3 {
     margin-left: 5px;
     margin-right: auto;
     margin-bottom: 20rem;
+    margin-top: 8em;
     right: 1.5em;
     float: right;
     font-style: italic;
@@ -342,16 +343,15 @@ footer {
 @media screen and (max-width:1200px) {
     .bouton-windowsXPsound {
 
-    display: none;
+        display: none;
     }
     aside {
         display: none;
     }
 }
-
-@media screen and (max-height: 1200px) and (min-width: 1000px) {
- .asideChantier, .asideChantier img, .titreMondial{
-    display: none;
- }
+@media screen and (max-height: 600px)  {
+    .asideChantier, .asideChantier img, .titreMondial{
+        display: none;
+    }
 
 }
