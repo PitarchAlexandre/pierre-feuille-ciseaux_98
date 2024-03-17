@@ -288,8 +288,8 @@ footer ul {
     z-index: 2;
 }
 
-.boutonBarreTaches li:nth-child(1){
-    margin-top: 10px;
+.internetExplo{
+    margin-top: 5px;
 }
 .boutonBarreTaches {
     display: inline-block;
