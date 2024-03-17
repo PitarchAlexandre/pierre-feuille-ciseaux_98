@@ -18,7 +18,7 @@ header {
     width: 100%;
     border: solid black 1px;
     background-color: lightgray;
-    max-height: 120px;
+    max-height: 155px;
 }
 
 /*BARRE BLEU WINDOWS 98 DU HEADER*/
@@ -259,12 +259,11 @@ h3 {
 /*MENU START WINDOWS*/
 
 footer {
-    max-height: 40px;
+    max-height: 60px;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #c3c3c3;
-    margin: 0;
 }
 
 .btnDemarrer img {
@@ -303,19 +302,26 @@ footer {
     white-space: nowrap;
 }
 .menuStart ul {
-    margin-top: auto;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
+.menuStart li {
+    font-family: 'LeviWindows', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #c3c3c3;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 5px; /* Espacement entre les boutons */
+}
 
 .menuStart li button {
     display: block; /* Afficher chaque bouton sur une ligne différente */
-    width: 120%; /* Pour occuper toute la largeur disponible */
-    background: transparent;
-    margin-bottom: 5px; /* Espacement entre les boutons */
-    border-radius: 0;
-
+    width: 100%; /* Pour occuper toute la largeur disponible */
+    padding: 10px; /* Ajuster le padding selon vos préférences */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur */
 }
 
 .menuStart li img {
@@ -328,9 +334,19 @@ footer {
     filter: brightness(70%);
 }
 
-@media screen and (max-width: 700px) {
+/*MEDIA QUERRY*/
 
+@media screen and (max-width: 480px) {
+    height: 30%;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 40%;
+    }
     .windows-topbar {
+        height: 30%;
         margin: 0;
         padding: 0;
         font-size: .8rem;
@@ -342,7 +358,7 @@ footer {
         background-color: #04008a;
     }
     h1 {
-        font-size: x-large;
+        font-size: xxx-large;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -387,9 +403,9 @@ footer {
         display: none;
     }
 }
-@media screen and (max-height: 600px)  {
-    .asideChantier, .asideChantier img, .titreMondial{
+@media screen and (max-height: 800px) {
+    .asideChantier, .asideChantier img, .titreMondial {
         display: none;
     }
-
 }
+
