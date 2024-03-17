@@ -16,7 +16,7 @@ L'esthétique du site est inspirée de Windows 98 et vise à être humoristique.
 Un travail sur le code CSS a été entamé pour rendre le site responsive et adaptatif aux téléphones, bien que cela ne soit pas encore optimal. Actuellement, le site n'est pas pleinement compatible avec les petits écrans d'ordinateur, tels que les Notebooks.
 
 ## Menu start
-!EN CONSTRUCTION!
+#### !EN CONSTRUCTION!
 Le but serait de faire un menu démarrer comme dans Windows 98 qui permettrait à l'utilisateur de recommencer la partie ou de voir l'historique des résultats (il faudrait créer d'abord une base de donnée locale). Ce menu pourrait aussi contenir des pages qui permettrait à l'utilisateur de naviguer sur d'autres page, à la place d'avoir une barre de navigation classique
 
 ### J'écoute volontiers si vous avez des conseils ou des idées à apporter à ce projet !
