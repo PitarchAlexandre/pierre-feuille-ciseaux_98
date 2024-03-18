@@ -71,4 +71,3 @@ function citationAleatoire() {
     // affiche le message dans le tableau à la place du texte d'origine
     citationTopBar.innerText = citationAleatoire;
 };
-
