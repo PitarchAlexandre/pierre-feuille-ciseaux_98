@@ -24,6 +24,8 @@ let scoreOrdi = document.getElementById('scoreBot');
 let compteurScoreUti = 0;
 let compteurScoreBot = 0;
 
+const recommencerParti = document.getElementById('restartGameBtn');
+
 //tableau qui contient les 3 signes de l'ordinateur
 const tabOrdi = [
     { choix: 'pierre', image: 'img/pierre.png' },
@@ -78,6 +80,7 @@ function jouer(signeUtilisateur){
     compteurScoreUti = String(compteurScoreUti);
     compteurScoreBot = String(compteurScoreBot);
 
+    //affiche le score sur le "scoreboard"
     scoreUtilisateur.innerText = compteurScoreUti;
     scoreOrdi.innerText = compteurScoreBot
 
@@ -98,4 +101,24 @@ function jouer(signeUtilisateur){
         scoreUtilisateur.innerText = compteurScoreUti;
         scoreOrdi.innerText = compteurScoreBot
     }
+}
+
+//Lorsque l'on clique sur restart, ça recommence la partie (compteur à 0:0)
+recommencerParti.addEventListener('click', function () {
+    nouvelleGame()
+})
+
+//Remet les compteurs à zéro et affiche le résultat 0:0
+function nouvelleGame() {
+    //remet les compteur à zéro
+    compteurScoreUti = 0;
+    compteurScoreBot = 0;
+
+    //converti les chiffres en string
+    compteurScoreUti = String(compteurScoreUti);
+    compteurScoreBot = String(compteurScoreBot);
+
+    //affiche les résultats (0:0)
+    scoreUtilisateur.innerText = compteurScoreUti;
+    scoreOrdi.innerText = compteurScoreBot;
 }
