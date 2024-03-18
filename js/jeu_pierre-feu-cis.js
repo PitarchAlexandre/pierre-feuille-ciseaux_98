@@ -1,5 +1,5 @@
 /**
- * Démo mon premier JavaScript
+ * Jeux pierre, feuille, ciseaux
  * @author  Alexandre Pitarch
  * @version 1.0
  * @since   2024-03-14
