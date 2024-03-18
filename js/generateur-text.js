@@ -16,25 +16,25 @@ let compteurClique = 0;
 
 //tableau qui contient les citations
 const tabCitation = ['Ok peut-être pas champion du monde, mais tu deviendras le meilleur!',
-                    'Comment ça, tu penses que c\'est juste de la chance?',
-                    'Arrête d\'essayer de quitter cette page!',
-                    'C\'est l\'histoire d\'un pingouin qui respire par les fesses, il s\'assoit et il meurt!',
-                    'Tu veux vraiment partir? Mais on s’amusait bien ensemble!',
-                    'Attention! Quitter cette page pourrait causer une explosion de paillettes!',
-                    'Voulez-vous vraiment quitter? On pourrait jouer à cache-cache virtuel!',
-                    'Un petit clic pour toi, un grand désespoir pour cette page!',
-                    'Si tu pars, les licornes pleureront des arcs-en-ciel!',
-                    'On dirait que tu essayes de m\'abandonner, mais je suis là pour toi 24/7!',
-                    'Je suis une page web triste maintenant... 😢',
-                    'La sortie est par où déjà? Oh, tu veux vraiment partir?',
-                    'Tu vas me manquer! (Non, sérieusement, ne pars pas!)',
-                    'Une fois que tu pars, tu ne pourras plus revenir dans le monde magique de cette page!',
-                    'Réfléchis bien avant de partir! On ne sait jamais ce qui peut arriver!',
-                    'Si tu restes, on pourrait discuter de la vie, de l\'univers et de tout le reste!',
-                    'C\'est pas le moment de partir, j\'avais encore tellement de choses à te montrer!',
-                    'Tant que tu restes, la fête continue! 🎉',
-                    'Si tu restes, je promets de ne pas te demander de cookies! 🍪',
-                    'Ne pars pas! Reste ici et découvre le secret le mieux gardé du web!']
+    'Comment ça, tu penses que c\'est juste de la chance?',
+    'Arrête d\'essayer de quitter cette page!',
+    'C\'est l\'histoire d\'un pingouin qui respire par les fesses, il s\'assoit et il meurt!',
+    'Tu veux vraiment partir? Mais on s’amusait bien ensemble!',
+    'Attention! Quitter cette page pourrait causer une explosion de paillettes!',
+    'Voulez-vous vraiment quitter? On pourrait jouer à cache-cache virtuel!',
+    'Un petit clic pour toi, un grand désespoir pour cette page!',
+    'Si tu pars, les licornes pleureront des arcs-en-ciel!',
+    'On dirait que tu essayes de m\'abandonner, mais je suis là pour toi 24/7!',
+    'Je suis une page web triste maintenant... 😢',
+    'La sortie est par où déjà? Oh, tu veux vraiment partir?',
+    'Tu vas me manquer! (Non, sérieusement, ne pars pas!)',
+    'Une fois que tu pars, tu ne pourras plus revenir dans le monde magique de cette page!',
+    'Réfléchis bien avant de partir! On ne sait jamais ce qui peut arriver!',
+    'Si tu restes, on pourrait discuter de la vie, de l\'univers et de tout le reste!',
+    'C\'est pas le moment de partir, j\'avais encore tellement de choses à te montrer!',
+    'Tant que tu restes, la fête continue! 🎉',
+    'Si tu restes, je promets de ne pas te demander de cookies! 🍪',
+    'Ne pars pas! Reste ici et découvre le secret le mieux gardé du web!']
 
 //A chaque fois que le bouton fermer sera cliqué, une citation sera affiché
 btnFermer.addEventListener('click', function () {
@@ -61,16 +61,14 @@ btnFermer.addEventListener('click', function () {
 
 //permet de générer des citations aléatoirement
 function citationAleatoire() {
-    //déclaration de l'index
     let citationIndexTab;
-    //déclaration de la citation
-    let citationAleatoire;
+    let citationRandom;
 
     //permet de générer un index au tableau aléatoirement
     citationIndexTab = Math.floor(Math.random() * tabCitation.length);
     //va chercher une citation dans le tableau
     citationAleatoire = tabCitation[citationIndexTab];
     //affiche le message dans le tableau à la place du texte d'origine
-    citationTopBar.innerText = citationAleatoire;
+    citationTopBar.innerText = citationRandom;
 
 }
