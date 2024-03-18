@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
     <link rel="manifest" href="ico/site.webmanifest">
+
 </head>
 <body>
 
@@ -24,7 +25,9 @@
             ×
         </button>
     </div>
-    <h1>Pierre, Feuille, Ciseaux 98</h1>
+    <div class="backgroundWndTopBar">
+        <h1>Pierre, Feuille, Ciseaux 98</h1>
+    </div>
 </header>
 
 <main>
@@ -42,12 +45,6 @@
                 <li><button id="ciseaux"><img src="img/ciseaux.png" /></button></li>
             </ul>
         </div>
-
-        <aside class="bouton-windowsXPsound">
-            <p>Cliquez ici!!!</p>
-            <img src="img/fleche.gif" />
-            <iframe width="110" height="100" src="https://www.myinstants.com/instant/windows-xp-startup-sound-58970/embed/" frameborder="0" scrolling="no"></iframe>
-        </aside>
 
         <div class="tableauScore">
             <h3 class="score">
@@ -71,16 +68,17 @@
             </div>
             <p class="affichageSigneOrdi"id="signeOrdi"> </p>
         </div>
-
         <div class="resultat">
             <p id="vainqueur"></p>
         </div>
+    </div>
 
-    </div>
-    <div class="menuStart" id="listeStart">
-        <div class="styleSideStart">Windows 98</div>
-        <button class="restartGame" id="restartGameBtn">Restart game</button>
-    </div>
+        <aside class="bouton-windowsXPsound">
+            <p>Cliquez ici!!!</p>
+            <img src="img/fleche.gif" />
+            <iframe width="110" height="100" src="https://www.myinstants.com/instant/windows-xp-startup-sound-58970/embed/"
+                    frameborder="0" scrolling="no"></iframe>
+        </aside>
 
     <aside class="asideChantier">
         <img src="img/triangle.gif" alt="chantier-en-cours"/>
@@ -89,19 +87,115 @@
         <p class="titreMondial">The least responsive website in the world!</p>
     </aside>
 
+    <div class="popUp-container" id="popUp-container">
+        <div class="popUp">
+            <h2>Aide</h2>
+            <h3>Les règles :</h3>
+            <ol>
+                <li><strong>Pierre bat </strong> Ciseaux : Si un joueur choisit Pierre et que l'autre joueur
+                    choisit Ciseaux, le joueur qui a choisi Pierre gagne.
+                </li>
+                <li><strong>Ciseaux bat Feuille</strong> : Si un joueur choisit Ciseaux et que l'autre joueur choisit
+                    Feuille, le joueur qui a choisi Ciseaux gagne.</li>
+                <li><strong>Feuille bat Pierre</strong> : Si un joueur choisit Feuille et que l'autre joueur choisit
+                    Pierre, le joueur qui a choisi Feuille gagne.</li>
+                <li><strong>Égalité</strong>: Si les deux joueurs choisissent la même option, c'est une égalité et
+                    aucun des joueurs ne gagne.</li>
+            </ol>
+
+            <h3>Techniques secrètes :</h3>
+            <ul>
+            <li>Le Jeu de l'Imitation : Essayez de prédire les schémas de l'IA. Si elle a choisi Pierre plusieurs fois
+                d'affilée, il est possible qu'elle continue avec Pierre. Jouez alors Feuille pour la battre ! L'IA ne
+                peut pas rivaliser avec votre esprit tordu.
+            </li>
+            <li>La Psychologie Inversée : Faites semblant d'être prévisible. Si vous avez choisi Pierre plusieurs fois,
+                l'IA pourrait penser que vous allez le faire encore. Surprenez-la en choisissant Ciseaux à la place !
+                L'IA pourrait alors être confuse et prendre une mauvaise décision.</li>
+            <li>Le Pouvoir de la Chance : L'IA peut être programmée pour analyser des schémas, mais elle ne peut pas
+                prédire la chance. Lancez un dé ou tirez une carte pour décider de votre choix. Qui sait, peut-être que
+                le destin est de votre côté aujourd'hui !</li>
+            <li>La Stratégie du Chaos : Jouez aléatoirement ! L'IA peut avoir du mal à s'adapter à un joueur
+                imprévisible. Utilisez un générateur de nombres aléatoires pour choisir votre coup. C'est fou, c'est
+                imprévisible, mais ça pourrait bien fonctionner !</li>
+            <li>La Théorie du Complot : Convainquez-vous que l'IA a des favoris cachés. "Elle adore la pierre le lundi",
+                "Elle est fan de feuille après 15h". Adaptez vos choix en conséquence. Vous ne saurez jamais, peut-être
+                que vous découvrirez un schéma secret !</li>
+            </ul>
+            <button id="fermerAide">Fermer</button>
+        </div>
+    </div>
+
+    <div class="menuStart" id="listeStart">
+        <div class="sideStartWrapper">
+            <div class="styleSideStart">
+                <img src="img/wnd98.png"/>
+            </div>
+            <ul>
+                <li><button>
+                    <img src="img/btnWindowsUpdate.png" height="55" width="360"/>
+                </button></li>
+                <li><button>
+                    <img src="img/btnProgrammes.png"/>
+                </button></li>
+                <li><button>
+                    <img src="img/btnParametres.png"/>
+                </button></li>
+                <li><button>
+                    <img src="img/btnRechercher.png"/>
+                </button></li>
+                <li><button id="btnAide">
+                    <img src="img/bntAide.png"/>
+                </button></li>
+                <li><button>
+                    <img src="img/btnExecuter.png"/></button></li>
+                <li>
+                    <button  id="restartGameBtn">
+                    <img src="img/btnArreter.png" />
+                </button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
 </main>
 
 <footer>
-    <button class="btnDemarrer" id="btnWindows">
+<ul class="allBtnBarreTaches">
+    <li>
+        <button class="btnDemarrer" id="btnWindows">
+        <img src="img/start.gif" alt="menu-start-windows_98" />
+         </button>
+    </li>
+    <li>
+        <button class="boutonBarreTaches">
+            <img src="img/btnArrierePlan.png" alt="bouton-arrière-plan"/>
+        </button>
+    </li>
+    <li>
+        <a href="https://fr.wikipedia.org/wiki/Internet_Explorer" target="_blank">
+        <button class="boutonBarreTaches">
+          <img src="img/btnInternetExplorer.png" alt="bouton-internet-explorer" id="internetExplorer"/>
+        </button>
+        </a>
+    </li>
+    <li>
+        <a href="https://outlook.live.com/" target="_blank">
+        <button class="boutonBarreTaches">
+            <img src="img/btnOutlook.png" alt="bouton-outlook" />
+        </button>
+        </a>
+    </li>
+</ul>
 
-        <img src="img/start.gif" alt="menu-start-windows_98"/>
-    </button>
 </footer>
 
 <!--LES SCRIPTS JAVASCRIPT-->
 <script src="js/generateur-text.js"></script>
 <script src="js/jeu_pierre-feu-cis.js"></script>
 <script src="js/bouton-demarrer.js"></script>
+<script src="js/aide.js"></script>
 
 </body>
 
