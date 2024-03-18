@@ -62,13 +62,13 @@ btnFermer.addEventListener('click', function () {
 //permet de générer des citations aléatoirement
 function citationAleatoire() {
     let citationIndexTab;
-    let citationAleatoire;
+    let citationRandom;
 
     //permet de générer un index au tableau aléatoirement
     citationIndexTab = Math.floor(Math.random() * tabCitation.length);
     //va chercher une citation dans le tableau
     citationAleatoire = tabCitation[citationIndexTab];
     //affiche le message dans le tableau à la place du texte d'origine
-    citationTopBar.innerText = citationAleatoire;
+    citationTopBar.innerText = citationRandom;
 
 }
