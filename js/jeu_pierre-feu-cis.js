@@ -82,7 +82,7 @@ function jouer(signeUtilisateur){
 
     //affiche le score sur le "scoreboard"
     scoreUtilisateur.innerText = compteurScoreUti;
-    scoreOrdi.innerText = compteurScoreBot
+    scoreOrdi.innerText = compteurScoreBot;
 
     //Affiche le résultat quand un des deux joueurs atteint 10
     if (compteurScoreUti >= 10) {
@@ -92,7 +92,7 @@ function jouer(signeUtilisateur){
         compteurScoreBot = 0;
         scoreUtilisateur.innerText = compteurScoreUti;
         scoreOrdi.innerText = compteurScoreBot
-    }
+    };
     else if (compteurScoreBot >= 10){
         alert('Vous avez perdu 😕 \n' +
             'Vous ferez mieux la prochaine fois! 💪')
@@ -100,13 +100,13 @@ function jouer(signeUtilisateur){
         compteurScoreBot = 0;
         scoreUtilisateur.innerText = compteurScoreUti;
         scoreOrdi.innerText = compteurScoreBot
-    }
-}
+    };
+};
 
 //Lorsque l'on clique sur restart, ça recommence la partie (compteur à 0:0)
 recommencerParti.addEventListener('click', function () {
     nouvelleGame()
-})
+});
 
 //Remet les compteurs à zéro et affiche le résultat 0:0
 function nouvelleGame() {
@@ -121,4 +121,4 @@ function nouvelleGame() {
     //affiche les résultats (0:0)
     scoreUtilisateur.innerText = compteurScoreUti;
     scoreOrdi.innerText = compteurScoreBot;
-}
+};
