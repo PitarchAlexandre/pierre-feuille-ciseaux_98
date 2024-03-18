@@ -120,5 +120,5 @@ function nouvelleGame() {
 
     //affiche les résultats (0:0)
     scoreUtilisateur.innerText = compteurScoreUti;
-    scoreOrdi.innerText = compteurScoreBot
+    scoreOrdi.innerText = compteurScoreBot;
 }
