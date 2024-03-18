@@ -9,13 +9,15 @@
 
 //Permet d'aller chercher différentes variables
 const btnAide = document.getElementById('btnAide');
-const btnFermer = document.getElementById('fermerAide');
-const popUp   = document.getElementById('popUpAide');
+const popUp = document.getElementById('popUp-container');
+const btnFermerPopUp = document.getElementById('fermerAide');
 
-btnAide.addEventListener('click',function () {
-    popUp.style.display = 'block'
+btnAide.addEventListener('click', function () {
+    popUp.style.display = 'block';
+    console.log('ok')
 });
 
-btnFermer.addEventListener('click', function () {
+btnFermerPopUp.addEventListener('click', function () {
     popUp.style.display = 'none';
-})
+});
+

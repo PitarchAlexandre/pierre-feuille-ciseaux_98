@@ -87,11 +87,42 @@
         <p class="titreMondial">The least responsive website in the world!</p>
     </aside>
 
-    <div class="popUp" id="popUpAide">
-        <div class="ineterieurPopUp">
-            <h2>Menu Aide utilisateur</h2>
-            <p>le texte qui donne des conseils en pierre feuille ciseaux</p>
-            <button class="popExit" id="fermerAide">Fermer</button>
+    <div class="popUp-container" id="popUp-container">
+        <div class="popUp">
+            <h2>Aide</h2>
+            <h3>Les règles :</h3>
+            <ol>
+                <li><strong>bat </strong> Ciseaux : Si un joueur choisit Pierre et que l'autre joueur choisit Ciseaux, le joueur
+                    qui a choisi Pierre gagne.
+                </li>
+                <li><strong>Ciseaux bat Feuille</strong> : Si un joueur choisit Ciseaux et que l'autre joueur choisit
+                    Feuille, le joueur qui a choisi Ciseaux gagne.</li>
+                <li><strong>Feuille bat Pierre</strong> : Si un joueur choisit Feuille et que l'autre joueur choisit
+                    Pierre, le joueur qui a choisi Feuille gagne.</li>
+                <li><strong>Égalité</strong>: Si les deux joueurs choisissent la même option, c'est une égalité et
+                    aucun des joueurs ne gagne.</li>
+            </ol>
+
+            <h3>Techniques secrètes :</h3>
+            <ul>
+            <li>Le Jeu de l'Imitation : Essayez de prédire les schémas de l'IA. Si elle a choisi Pierre plusieurs fois
+                d'affilée, il est possible qu'elle continue avec Pierre. Jouez alors Feuille pour la battre ! L'IA ne
+                peut pas rivaliser avec votre esprit tordu.
+            </li>
+            <li>La Psychologie Inversée : Faites semblant d'être prévisible. Si vous avez choisi Pierre plusieurs fois,
+                l'IA pourrait penser que vous allez le faire encore. Surprenez-la en choisissant Ciseaux à la place !
+                L'IA pourrait alors être confuse et prendre une mauvaise décision.</li>
+            <li>Le Pouvoir de la Chance : L'IA peut être programmée pour analyser des schémas, mais elle ne peut pas
+                prédire la chance. Lancez un dé ou tirez une carte pour décider de votre choix. Qui sait, peut-être que
+                le destin est de votre côté aujourd'hui !</li>
+            <li>La Stratégie du Chaos : Jouez aléatoirement ! L'IA peut avoir du mal à s'adapter à un joueur
+                imprévisible. Utilisez un générateur de nombres aléatoires pour choisir votre coup. C'est fou, c'est
+                imprévisible, mais ça pourrait bien fonctionner !</li>
+            <li>La Théorie du Complot : Convainquez-vous que l'IA a des favoris cachés. "Elle adore la pierre le lundi",
+                "Elle est fan de feuille après 15h". Adaptez vos choix en conséquence. Vous ne saurez jamais, peut-être
+                que vous découvrirez un schéma secret !</li>
+            </ul>
+            <button id="fermerAide">Fermer</button>
         </div>
     </div>
 
