@@ -20,4 +20,3 @@ btnAide.addEventListener('click', function () {
 btnFermerPopUp.addEventListener('click', function () {
     popUp.style.display = 'none';
 });
-
