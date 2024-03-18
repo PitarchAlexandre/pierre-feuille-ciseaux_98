@@ -300,6 +300,12 @@ footer ul {
     clip:rect(0px,60px,200px,0px);overflow:hidden
 }
 
+.heure {
+    font-size: xxx-large;
+    margin-left: auto;
+    z-index: 1;
+}
+
 /*UNE FOIS QU'ON A CLIQUE SUR START*/
 .menuStart {
     display: flex;
