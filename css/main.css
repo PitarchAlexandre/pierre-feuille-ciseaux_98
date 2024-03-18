@@ -12,28 +12,37 @@ body {
     font-family: Trebuchet MS, sans-serif;
     background-color:#008080;
 }
+
+ul li{
+    list-style-type: none;
+}
+
+/* HEADER */
 header {
     width: 100%;
     border: solid black 1px;
     background-color: lightgray;
-    max-height: 120px;
+    max-height: 155px;
 }
+
+/*BARRE BLEU WINDOWS 98 DU HEADER*/
 .p-topbar {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
 
 }
 .windows-topbar{
     margin: 3px 4px 0;
     padding: 5px;
-    font-size: .8rem;
     line-height: 15px;
     position: relative;
     display: flex;
     justify-content: center;
-    color: #fff;
     background-color: #04008a;
+    max-width: 100%;
 }
 
 .windows-topbar_close {
@@ -50,6 +59,7 @@ header {
     align-items: center;
 }
 
+/*TITRE DE LA PAGE DU HEADER*/
 @keyframes wheelHueColor {
     from, to { color: hsl(324, 70%, 45%); }
     10%      { color: hsl(360, 65%, 45%); }
@@ -72,122 +82,78 @@ h1 {
     font-style: italic;
     color: hsl(324, 70%, 45%);
     animation: wheelHueColor 1s infinite;
+    max-width: 100%;
 }
+
+/* MAIN */
 main {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-
+    margin: 0;
 }
 
+/*TEXTE EN HAUT DE PAGE*/
 h2 {
     margin: 5px;
-}
-
-.jeu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .textIntro {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 0.5%;
+    padding: 0.15%;
     margin: 5px;
-
 }
+
 br {
     margin: 5px;
 }
 
-ul button {
-    height: 150px;
-    width: 150px;
+/*LE JEU PIERRE FEUILLE CISEAUX*/
+.jeu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.jeu ul button {
+    height: 8em;
+    width: 8em;
     border-radius: 10px;
     background-color: #e5e3e3;
 }
 
-ul button:hover {
+.jeu ul button:hover {
     background-color: darkgray;
 }
 
-button img {
-    max-width:100px
+.jeu button img {
+    max-width: 7em;
 }
 
-
-ul {
+.jeu ul {
     display: flex;
 }
 
-li {
+.jeu li {
     list-style-type: none;
     margin:10px 10px 5px 10px ;
 }
 
-/*BOUTON GENERANT LA SON DE WINDOWS XP*/
-.bouton-windowsXPsound {
-    position: fixed;
-    margin-right: auto;
-    width: 40%;
-    left: 2px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bouton-windowsXPsound p {
-    font-family: 'LeviWindows', sans-serif ;
-    font-weight: bolder;
-    font-size: 60px;
-    text-transform: uppercase;
-    color: hsl(324, 70%, 45%);
-    animation: wheelHueColor 1s infinite;
-    margin: 0;
-}
-
-/*ASIDE CHANTIER EN COURS*/
-.asideChantier {
-    position: fixed;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-    right: 2px;
-    float: right;
-    font-style: italic;
-    font-size: large;
-}
-.asideChantier img {
-    width: 200px;
-}
-
-.titreMondial {
-    font-family: 'LeviWindows', sans-serif ;
-    font-weight: bolder;
-    font-size: 60px;
-    text-transform: uppercase;
-    color: hsl(324, 70%, 45%);
-    animation: wheelHueColor 1s infinite;
-    display: flex;
-    justify-content: center;
-    max-width: 500px;
-    margin:auto 20px;
-    line-height: 50px;
-
-}
-
-h3 {
+/*AFFICHAGE DU SCORE*/
+.jeu h3 {
     margin: 0;
     font-size: xxx-large;
     font-family: 'LeviWindows', sans-serif;
 }
 
+/*SIGNES DU BOT*/
+/*FENETRE DU BOT*/
 .bot {
     width: 25%;
     height:25%;
@@ -240,68 +206,255 @@ h3 {
     padding: 0;
 }
 
-.score {
-    margin: 0;
-    padding: 0;
-    font-size: xxx-large;
+/*BOUTON GENERANT LA SON DE WINDOWS XP*/
+.bouton-windowsXPsound {
+    position: fixed;
+    margin-right: auto;
+    margin-bottom: 10rem;
+    width: 40%;
+    left:1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+.bouton-windowsXPsound p {
+    font-family: 'LeviWindows', sans-serif ;
+    font-weight: bolder;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 1s infinite;
+    margin: 0;
+}
+
+/*ASIDE CHANTIER EN COURS*/
+.asideChantier {
+    position: fixed;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-bottom: 3em;
+    right: 1.5em;
+    float: right;
+    font-style: italic;
+    font-size: large;
+}
+.asideChantier img {
+    width: 10em;
+    max-width: 100%;
+}
+
+.titreMondial {
+    font-family: 'LeviWindows', sans-serif ;
+    font-weight: bolder;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 1s infinite;
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    margin:auto 20px;
+    line-height: 50px;
+
+}
+
+/*MENU START WINDOWS*/
+
+/*BARRE DES TACHES */
 footer {
-    max-height: 40px;
+    height: 2.9em;
+    max-height: 50px;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #c3c3c3;
 }
 
+footer ul {
+    margin: 0;
+    padding: 1px;
+    display: flex;
+    vertical-align: middle;
+}
+
+.allBtnBarreTaches button{
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.btnDemarrer img {
+    margin-top: auto;
+    min-width: 100%;
+    width: 100px;
+    z-index: 5;
+}
+
+#internetExplorer{
+    margin-top: 5px;
+}
+
+.boutonBarreTaches {
+    display: inline-block;
+    clip:rect(0px,60px,200px,0px);overflow:hidden
+}
+
+/*UNE FOIS QU'ON A CLIQUE SUR START*/
 .menuStart {
-    display: none;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 45px;
+    min-width: 17em;
+    max-width: 300px;
+    min-height: 300px;
     background-color: #c3c3c3;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 2px black, -2px -2px gray;
+    z-index: 4;
+}
+
+.menuStart li:first-child {
+    border-bottom: solid gray 1px;
+}
+.sideStartWrapper{
+    flex: 1; /* Faire en sorte que cet élément s'étende sur toute la hauteur disponible */
+    display: flex;
+    align-items: center; /* Centrer verticalement le contenu */
 }
 
 .styleSideStart {
-    width: 10% ;
+    margin:3px;
+    width: 13%;
+    height: 50%;
     background-color: #04008a;
     color: white;
-    transform: rotate(-90deg);
+    writing-mode: vertical-rl;
+    text-align: right;
+    padding: 9px;
+    white-space: nowrap;
 }
 
-.restartGame {
+.boutonBarreTaches button {
+    background-color: transparent;
+}
+
+.menuStart ul {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.menuStart li {
     font-family: 'LeviWindows', sans-serif;
     font-weight: bold;
     font-size: x-large;
-    background-color: #c3c3c3;
+    background-color: transparent;
+    border: none;
     border-radius: 0;
+    margin-bottom: 5px; /* Espacement entre les boutons */
+}
+
+.menuStart li button {
+    display: block; /* Afficher chaque bouton sur une ligne différente */
+    width: 100%; /* Pour occuper toute la largeur disponible */
+    padding: 10px; /* Ajuster le padding selon vos préférences */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+    background-color: transparent;
+    border: none;
+}
+
+.menuStart li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menuStart li:hover {
+    filter: brightness(88%);
+}
+
+/*POPUP AIDE*/
+.popUp-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    border-radius: 0;
+}
+
+.popUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:  MS sans-serif;
+    background-color: #c0c0c0;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    text-align: center;
+}
+
+.popUp h2, h3{
+    text-decoration: underline;
+}
+
+.popUp button {
+    background-color: #c0c0c0;
+    margin: 1rem;
+    padding: 10px 20px;
+    border: solid black 1px;
+    border-radius: 0;
+    box-shadow: 2px 2px black, -1px -1px gray;
+    cursor: pointer;
 
 }
 
+.popUp button:hover {
+    background-color: #ddd;
+}
 
-@media screen and (max-width: 700px) {
+/*MEDIA QUERRY*/
+@media screen and (max-width: 900px) {
 
     .windows-topbar {
+        height: 30%;
         margin: 0;
         padding: 0;
-        font-size: .8rem;
+        font-size: 1rem;
         line-height: 15px;
         position: relative;
-        display: flex;
         justify-content: center;
-        color: #fff;
-        background-color: #04008a;
     }
+    .windows-topbar_close {
+        display: flex;
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     h1 {
-        font-size: x-large;
+        font-size: xxx-large;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    ul{
-        margin: auto
+    .jeu ul{
+        margin-left: auto;
+        margin-right: auto;
     }
-    li {
-        margin: auto;
+    .jeu li {
+        margin: 0.5rem;
     }
     ul button {
         max-width: 100px;
@@ -314,12 +467,21 @@ footer {
         max-width: 80px;
     }
 
-    aside {
-        display: flex;
+    .bot {
+        display: inline-block;
+        position: relative;
+        z-index: 5;
     }
+
     .bouton-windowsXPsound {
-        display: flex;
-        margin-top: auto;
+        display: block;
+        text-align: center;
+        margin-left: auto ;
+        margin-right: auto;
+        margin-top: 10px; /* Ajoutez un peu d'espace au-dessus du bouton si nécessaire */
+        position: relative;
+
+        z-index: 4;
     }
     footer {
         position: relative;
@@ -327,12 +489,18 @@ footer {
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and  (min-width: 800px) and (max-width:1200px) {
     .bouton-windowsXPsound {
 
-    display: none;
+        display: none;
     }
     aside {
         display: none;
     }
 }
+@media screen and (max-height: 800px) {
+    .asideChantier, .asideChantier img, .titreMondial {
+        display: none;
+    }
+}
+

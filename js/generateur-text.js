@@ -59,16 +59,16 @@ btnFermer.addEventListener('click', function () {
     }
 });
 
-//permet de générer des citations aléatoirement
+// permet de générer des citations aléatoirement
 function citationAleatoire() {
     let citationIndexTab;
-    let citationRandom;
+    let citationAleatoire;
 
-    //permet de générer un index au tableau aléatoirement
+    // permet de générer un index au tableau aléatoirement
     citationIndexTab = Math.floor(Math.random() * tabCitation.length);
-    //va chercher une citation dans le tableau
+    // va chercher une citation dans le tableau
     citationAleatoire = tabCitation[citationIndexTab];
-    //affiche le message dans le tableau à la place du texte d'origine
-    citationTopBar.innerText = citationRandom;
+    // affiche le message dans le tableau à la place du texte d'origine
+    citationTopBar.innerText = citationAleatoire;
+};
 
-}
