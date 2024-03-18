@@ -92,7 +92,7 @@ function jouer(signeUtilisateur){
         compteurScoreBot = 0;
         scoreUtilisateur.innerText = compteurScoreUti;
         scoreOrdi.innerText = compteurScoreBot
-    };
+    }
     else if (compteurScoreBot >= 10){
         alert('Vous avez perdu 😕 \n' +
             'Vous ferez mieux la prochaine fois! 💪')
@@ -101,9 +101,7 @@ function jouer(signeUtilisateur){
         scoreUtilisateur.innerText = compteurScoreUti;
         scoreOrdi.innerText = compteurScoreBot
     }
-    else {
 
-    };
 };
 
 //Lorsque l'on clique sur restart, ça recommence la partie (compteur à 0:0)
