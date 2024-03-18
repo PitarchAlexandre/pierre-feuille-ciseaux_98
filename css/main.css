@@ -317,6 +317,10 @@ footer li {
     z-index: 4;
 }
 
+.menuStart li {
+    list-style-type: none;
+}
+
 .sideStartWrapper{
     flex: 1; /* Faire en sorte que cet élément s'étende sur toute la hauteur disponible */
     display: flex;
