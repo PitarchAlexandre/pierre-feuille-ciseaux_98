@@ -264,16 +264,19 @@ br {
 
 /*BARRE DES TACHES */
 footer {
+    height: 2.9em;
     max-height: 50px;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #c3c3c3;
 }
+
 footer ul {
     margin: 0;
-    padding: 0;
+    padding: 1px;
     display: flex;
+    vertical-align: middle;
 }
 
 .allBtnBarreTaches button{
@@ -313,11 +316,15 @@ footer ul {
     z-index: 4;
 }
 
+.menuStart li:first-child {
+    border-bottom: solid gray 1px;
+}
 .sideStartWrapper{
     flex: 1; /* Faire en sorte que cet élément s'étende sur toute la hauteur disponible */
     display: flex;
     align-items: center; /* Centrer verticalement le contenu */
 }
+
 .styleSideStart {
     margin:3px;
     width: 13%;
@@ -387,7 +394,8 @@ footer ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #dddddd;
+    font-family:  MS sans-serif;
+    background-color: #c0c0c0;
     padding: 20px;
     border-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -412,6 +420,7 @@ footer ul {
 .popUp button:hover {
     background-color: #ddd;
 }
+
 /*MEDIA QUERRY*/
 @media screen and (max-width: 900px) {
 
