@@ -276,6 +276,10 @@ footer ul {
     display: flex;
 }
 
+footer li {
+    list-style-type: none;
+}
+
 .allBtnBarreTaches button{
     border-radius: 0;
     background-color: transparent;
