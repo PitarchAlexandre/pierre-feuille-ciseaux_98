@@ -1,3 +1,5 @@
+Accédez au site : https://pitarchalexandre.github.io/pierre-feuille-ciseaux_98/
+
 # pierre-feuille-ciseaux_98
 
 A la base, le but de ce projet était simplement de faire un jeu pierre, feuille, ciseaux afin d'améliorer mes compétences en javascript.
@@ -20,3 +22,4 @@ Un travail sur le code CSS a été entamé pour rendre le site responsive et ada
 Le but serait de faire un menu démarrer comme dans Windows 98 qui permettrait à l'utilisateur de recommencer la partie ou de voir l'historique des résultats (il faudrait créer d'abord une base de donnée locale). Ce menu pourrait aussi contenir des pages qui permettrait à l'utilisateur de naviguer sur d'autres page, à la place d'avoir une barre de navigation classique
 
 ### J'écoute volontiers si vous avez des conseils ou des idées à apporter à ce projet !
+
